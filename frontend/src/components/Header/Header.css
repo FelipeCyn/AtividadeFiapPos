@@ -1,0 +1,69 @@
+.header {
+  background: var(--color-bg);
+  box-shadow: var(--shadow-sm);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-container {
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  padding: var(--spacing-md) var(--spacing-xl);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
+  font-size: var(--font-size-xl);
+  font-weight: 700;
+  color: #ed145b;
+  text-decoration: none;
+}
+
+.header-logo:focus {
+  outline: 3px solid #ed145b;
+  outline-offset: 2px;
+}
+
+.header-logo:focus:not(:focus-visible) {
+  outline: none;
+}
+
+.header-logo:focus-visible {
+  outline: 3px solid #ed145b;
+  outline-offset: 2px;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-lg);
+}
+
+.header-link {
+  color: var(--color-text-light);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.header-link:focus {
+  outline: 3px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+.header-link:focus:not(:focus-visible) {
+  outline: none;
+}
+
+.header-link:focus-visible {
+  outline: 3px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+.header-teacher {
+  color: var(--color-text-light);
+  font-weight: 500;
+  font-size: var(--font-size-sm);
+}

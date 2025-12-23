@@ -1,0 +1,110 @@
+.meus-posts {
+  min-height: 100vh;
+  background: var(--color-bg-light);
+}
+
+.meus-posts-main {
+  padding: var(--spacing-xl) var(--spacing-md);
+}
+
+.meus-posts-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.meus-posts-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--spacing-xl);
+}
+
+.meus-posts-header h1 {
+  margin: 0;
+  color: var(--color-text);
+  font-size: var(--font-size-2xl);
+}
+
+.meus-posts-loading,
+.meus-posts-error,
+.meus-posts-empty {
+  text-align: center;
+  padding: var(--spacing-xl);
+  background: var(--color-bg);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-sm);
+}
+
+.meus-posts-loading p,
+.meus-posts-empty p {
+  color: var(--color-text-light);
+  font-size: var(--font-size-lg);
+  margin: 0 0 var(--spacing-md) 0;
+}
+
+.meus-posts-error p {
+  color: var(--color-danger);
+  font-size: var(--font-size-lg);
+  margin: 0 0 var(--spacing-md) 0;
+}
+
+.meus-posts-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.meus-posts-item {
+  background: var(--color-bg);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-sm);
+  padding: var(--spacing-lg);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+.meus-posts-item-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.meus-posts-item-title {
+  margin: 0 0 var(--spacing-xs) 0;
+  font-size: var(--font-size-lg);
+  color: var(--color-text);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.meus-posts-item-date {
+  margin: 0;
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+}
+
+.meus-posts-item-actions {
+  display: flex;
+  gap: var(--spacing-sm);
+  flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .meus-posts-header {
+    flex-direction: column;
+    gap: var(--spacing-md);
+    align-items: flex-start;
+  }
+
+  .meus-posts-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .meus-posts-item-actions {
+    width: 100%;
+    justify-content: flex-start;
+  }
+}
